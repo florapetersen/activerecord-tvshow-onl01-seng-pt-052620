@@ -24,5 +24,7 @@ class Show < ActiveRecord::Base
   def self.popular_shows
     rating_above_5 = []
     Show.all each do |show|
-      if showrating_above_5 << 
+      if show.rating > 5
+        rating_above_5 << show
+      
 end
