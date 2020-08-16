@@ -20,4 +20,9 @@ class Show < ActiveRecord::Base
   def self.ratings_sum
     Show.sum(:rating)
   end
+
+  def self.popular_shows
+    rating_above_5 = []
+    Show.all each do |show|
+      if showrating_above_5 << 
 end
