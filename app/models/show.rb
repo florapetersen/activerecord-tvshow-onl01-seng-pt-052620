@@ -26,6 +26,6 @@ class Show < ActiveRecord::Base
     #Show.all each do |show|
       #if show.rating > 5
         #rating_above_5 << show
-    Show.where("rating > 5"), params[:rating]
+    Show.where("rating > 5", params[:rating])
   end
 end
